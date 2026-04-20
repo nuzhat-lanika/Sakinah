@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green-primary: #1F6F5B;
+  --green-mid: #2D7A62;
+  --gold: #C9933A;
+  --bg: #FAF8F5;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+
+.arabic { font-family: 'Amiri', serif; direction: rtl; unicode-bidi: bidi-override; }
+.serif { font-family: 'Crimson Pro', Georgia, serif; }
+
+.page-wrapper { min-height: 100dvh; background-color: var(--bg); }
+.app-shell { max-width: 480px; margin: 0 auto; min-height: 100dvh; background-color: #ffffff; box-shadow: 0 0 40px rgba(0,0,0,0.08); position: relative; }
+
+/* Flashcard 3D utilities */
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
